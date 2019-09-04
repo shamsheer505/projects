@@ -16,8 +16,8 @@ public class HotelBookingDAOImpl implements HotelBookingDAO {
 
 	private static final Logger logger = LoggerFactory.getLogger(HotelBookingDAOImpl.class);
 	
-	List<RoomEntity> roomEntities = Arrays.asList(new RoomEntity("Single Room", 1000, 20),
-			new RoomEntity("Double Room", 1500, 20), new RoomEntity("Single Room with AC", 2000, 10));
+	List<RoomEntity> roomEntities = Arrays.asList(new RoomEntity("Single Room", 1000, 30),
+			new RoomEntity("Double Room", 1500, 30), new RoomEntity("Single Room with AC", 2000, 20));
 
 	@Override
 	public RoomEntity fetchRoomDetails(String roomCategory) {

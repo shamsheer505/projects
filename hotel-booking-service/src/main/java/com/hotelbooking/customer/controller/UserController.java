@@ -29,7 +29,7 @@ public class UserController {
 	 * @author Shamsheer
 	 * @param user
 	 * @return APIResponse
-	 * This is an API Request to add bonus points to an User.
+	 * This is an API Request to add bonus points to an User. This API responds with status message upon successful addition of bonus points.
 	 */
 
 	@RequestMapping(value = "/users", method = RequestMethod.POST, consumes = "application/json")

@@ -30,7 +30,7 @@ public class HotelBookingController {
 	 * @param user
 	 * @return APIResponse
 	 * @throws Exception
-	 * This is an API request to book hotel rooms with bonus points available for an User.
+	 * This is an API request to book hotel rooms with bonus points available for an User. The API call will respond with booking ID on successful booking.
 	 */
 
 	@RequestMapping(value = "/api/rooms", method = RequestMethod.POST, consumes = "application/json")

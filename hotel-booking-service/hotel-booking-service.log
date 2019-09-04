@@ -1,96 +1,202 @@
-INFO	03 Sep 2019 17:28:27	1378	com.hotelbooking.customer.HotelBookingApplication	[main]	Starting HotelBookingApplication on LAPTOP-EVM83B6T with PID 14804 (C:\Studies\hotel-booking-service\target\classes started by codemantra in C:\Studies\hotel-booking-service)
-INFO	03 Sep 2019 17:28:27	1383	com.hotelbooking.customer.HotelBookingApplication	[main]	No active profile set, falling back to default profiles: default
-INFO	03 Sep 2019 17:28:31	5052	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	[main]	Tomcat initialized with port(s): 8082 (http)
-INFO	03 Sep 2019 17:28:31	5110	org.apache.coyote.http11.Http11NioProtocol	[main]	Initializing ProtocolHandler ["http-nio-8082"]
-INFO	03 Sep 2019 17:28:31	5126	org.apache.catalina.core.StandardService	[main]	Starting service [Tomcat]
-INFO	03 Sep 2019 17:28:31	5127	org.apache.catalina.core.StandardEngine	[main]	Starting Servlet engine: [Apache Tomcat/9.0.21]
-INFO	03 Sep 2019 17:28:31	5450	org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]	[main]	Initializing Spring embedded WebApplicationContext
-INFO	03 Sep 2019 17:28:31	5450	org.springframework.web.context.ContextLoader	[main]	Root WebApplicationContext: initialization completed in 3995 ms
-INFO	03 Sep 2019 17:28:36	9952	org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor	[main]	Initializing ExecutorService 'applicationTaskExecutor'
-INFO	03 Sep 2019 17:28:39	12814	org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver	[main]	Exposing 2 endpoint(s) beneath base path '/actuator'
-INFO	03 Sep 2019 17:28:39	13499	org.apache.coyote.http11.Http11NioProtocol	[main]	Starting ProtocolHandler ["http-nio-8082"]
-INFO	03 Sep 2019 17:28:39	13777	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	[main]	Tomcat started on port(s): 8082 (http) with context path ''
-INFO	03 Sep 2019 17:28:39	13787	com.hotelbooking.customer.HotelBookingApplication	[main]	Started HotelBookingApplication in 12.987 seconds (JVM running for 15.367)
-INFO	03 Sep 2019 17:31:53	207314	org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]	[http-nio-8082-exec-1]	Initializing Spring DispatcherServlet 'dispatcherServlet'
-INFO	03 Sep 2019 17:31:53	207314	org.springframework.web.servlet.DispatcherServlet	[http-nio-8082-exec-1]	Initializing Servlet 'dispatcherServlet'
-INFO	03 Sep 2019 17:31:53	207394	org.springframework.web.servlet.DispatcherServlet	[http-nio-8082-exec-1]	Completed initialization in 80 ms
-INFO	03 Sep 2019 17:31:54	207905	com.hotelbooking.customer.controller.HotelBookingController	[http-nio-8082-exec-1]	hotel room booking controller method start : userId 123
-INFO	03 Sep 2019 17:32:06	220482	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	In DAO fetching bonus points info for userId : 123
-INFO	03 Sep 2019 17:32:06	220483	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	In DAO fetched bonus points info of userId : 123
-INFO	03 Sep 2019 17:32:06	220484	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	In DAO to debit bonus points to userId : 123
-INFO	03 Sep 2019 17:32:06	220487	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	Current bonus points for the userId : 123 : 8000
-INFO	03 Sep 2019 17:32:06	220487	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	Bonus points balance after adding the points for userId : 123 : 4000
-INFO	03 Sep 2019 17:32:06	220487	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	In DAO debited bonus points from userId : 123
-INFO	03 Sep 2019 17:32:06	220488	com.hotelbooking.customer.serviceimpl.HotelBookingServiceImpl	[http-nio-8082-exec-1]	Room(s) booked for the request from userId : 123
-INFO	03 Sep 2019 17:32:53	267035	com.hotelbooking.customer.controller.HotelBookingController	[http-nio-8082-exec-2]	hotel room booking controller method start : userId 123
-INFO	03 Sep 2019 17:32:53	267036	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	In DAO fetching bonus points info for userId : 123
-INFO	03 Sep 2019 17:32:53	267036	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	In DAO fetched bonus points info of userId : 123
-INFO	03 Sep 2019 17:32:53	267036	com.hotelbooking.customer.serviceimpl.HotelBookingServiceImpl	[http-nio-8082-exec-2]	Rooms are not available at present for the request from userId : 123
-INFO	03 Sep 2019 17:33:18	292253	com.hotelbooking.customer.controller.HotelBookingController	[http-nio-8082-exec-3]	hotel room booking controller method start : userId 123
-INFO	03 Sep 2019 17:33:18	292254	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-3]	In DAO fetching bonus points info for userId : 123
-INFO	03 Sep 2019 17:33:18	292254	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-3]	In DAO fetched bonus points info of userId : 123
-INFO	03 Sep 2019 17:33:18	292254	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-3]	In DAO to debit bonus points to userId : 123
-INFO	03 Sep 2019 17:33:18	292254	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-3]	Current bonus points for the userId : 123 : 4000
-INFO	03 Sep 2019 17:33:18	292255	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-3]	Bonus points balance after adding the points for userId : 123 : 0
-INFO	03 Sep 2019 17:33:18	292255	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-3]	In DAO debited bonus points from userId : 123
-INFO	03 Sep 2019 17:33:18	292255	com.hotelbooking.customer.serviceimpl.HotelBookingServiceImpl	[http-nio-8082-exec-3]	Room(s) booked for the request from userId : 123
-INFO	03 Sep 2019 17:33:22	296284	com.hotelbooking.customer.controller.HotelBookingController	[http-nio-8082-exec-4]	hotel room booking controller method start : userId 123
-INFO	03 Sep 2019 17:33:22	296284	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-4]	In DAO fetching bonus points info for userId : 123
-INFO	03 Sep 2019 17:33:22	296285	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-4]	In DAO fetched bonus points info of userId : 123
-INFO	03 Sep 2019 17:33:22	296285	com.hotelbooking.customer.serviceimpl.HotelBookingServiceImpl	[http-nio-8082-exec-4]	insufficient bonus points to book room(s) for userId : 123
-INFO	03 Sep 2019 17:56:00	1654775	com.hotelbooking.customer.controller.HotelBookingController	[http-nio-8082-exec-5]	hotel room booking controller method start : userId 123
-INFO	03 Sep 2019 17:56:00	1654776	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-5]	In DAO fetching bonus points info for userId : 123
-INFO	03 Sep 2019 17:56:00	1654783	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-5]	In DAO fetched bonus points info of userId : 123
-INFO	03 Sep 2019 17:56:00	1654783	com.hotelbooking.customer.serviceimpl.HotelBookingServiceImpl	[http-nio-8082-exec-5]	insufficient bonus points to book room(s) for userId : 123
-INFO	03 Sep 2019 17:56:20	1674338	com.hotelbooking.customer.controller.UserController	[http-nio-8082-exec-7]	API called to add bonus points for the userId : 123
-INFO	03 Sep 2019 17:56:20	1674338	com.hotelbooking.customer.serviceimpl.UserServiceImpl	[http-nio-8082-exec-7]	In service call to add bonus points to userId : 123
-INFO	03 Sep 2019 17:56:20	1674338	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-7]	In DAO to add bonus points to userId : 123
-INFO	03 Sep 2019 17:56:20	1674339	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-7]	Current bonus points for the userId : 123 : 0
-INFO	03 Sep 2019 17:56:20	1674339	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-7]	Bonus points balance after adding the points for userId : 123 : 5000
-INFO	03 Sep 2019 17:56:20	1674339	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-7]	In DAO added bonus points to userId successfully : 123
-INFO	03 Sep 2019 17:56:25	1679076	com.hotelbooking.customer.controller.UserController	[http-nio-8082-exec-8]	API called to add bonus points for the userId : 123
-INFO	03 Sep 2019 17:56:25	1679077	com.hotelbooking.customer.serviceimpl.UserServiceImpl	[http-nio-8082-exec-8]	In service call to add bonus points to userId : 123
-INFO	03 Sep 2019 17:56:25	1679078	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-8]	In DAO to add bonus points to userId : 123
-INFO	03 Sep 2019 17:56:25	1679078	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-8]	Current bonus points for the userId : 123 : 5000
-INFO	03 Sep 2019 17:56:25	1679078	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-8]	Bonus points balance after adding the points for userId : 123 : 10000
-INFO	03 Sep 2019 17:56:25	1679078	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-8]	In DAO added bonus points to userId successfully : 123
-INFO	03 Sep 2019 17:56:34	1688537	com.hotelbooking.customer.controller.HotelBookingController	[http-nio-8082-exec-6]	hotel room booking controller method start : userId 123
-INFO	03 Sep 2019 17:56:34	1688538	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-6]	In DAO fetching bonus points info for userId : 123
-INFO	03 Sep 2019 17:56:34	1688538	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-6]	In DAO fetched bonus points info of userId : 123
-INFO	03 Sep 2019 17:56:34	1688539	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-6]	In DAO to debit bonus points to userId : 123
-INFO	03 Sep 2019 17:56:34	1688540	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-6]	Current bonus points for the userId : 123 : 10000
-INFO	03 Sep 2019 17:56:34	1688540	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-6]	Bonus points balance after debiting the points for userId : 123 : 6000
-INFO	03 Sep 2019 17:56:34	1688540	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-6]	In DAO debited bonus points from userId : 123
-INFO	03 Sep 2019 17:56:34	1688540	com.hotelbooking.customer.serviceimpl.HotelBookingServiceImpl	[http-nio-8082-exec-6]	Room(s) booked for the request from userId : 123
-INFO	03 Sep 2019 17:58:30	1804686	com.hotelbooking.customer.controller.HotelBookingController	[http-nio-8082-exec-10]	hotel room booking controller method start : userId 123
-INFO	03 Sep 2019 17:58:30	1804687	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-10]	In DAO fetching bonus points info for userId : 123
-INFO	03 Sep 2019 17:58:30	1804687	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-10]	In DAO fetched bonus points info of userId : 123
-INFO	03 Sep 2019 17:58:30	1804687	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-10]	In DAO to debit bonus points to userId : 123
-INFO	03 Sep 2019 17:58:30	1804687	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-10]	Current bonus points for the userId : 123 : 6000
-INFO	03 Sep 2019 17:58:30	1804687	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-10]	Bonus points balance after debiting the points for userId : 123 : 2000
-INFO	03 Sep 2019 17:58:30	1804687	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-10]	In DAO debited bonus points from userId : 123
-INFO	03 Sep 2019 17:58:30	1804687	com.hotelbooking.customer.serviceimpl.HotelBookingServiceImpl	[http-nio-8082-exec-10]	Room(s) booked for the request from userId : 123
-INFO	03 Sep 2019 18:15:06main  {correlationId} 	1022	com.hotelbooking.customer.HotelBookingApplication	[main]	Starting HotelBookingApplication on LAPTOP-EVM83B6T with PID 8412 (C:\Studies\hotel-booking-service\target\classes started by codemantra in C:\Studies\hotel-booking-service)
-INFO	03 Sep 2019 18:15:06main  {correlationId} 	1025	com.hotelbooking.customer.HotelBookingApplication	[main]	No active profile set, falling back to default profiles: default
-INFO	03 Sep 2019 18:15:09main  {correlationId} 	4013	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	[main]	Tomcat initialized with port(s): 8082 (http)
-INFO	03 Sep 2019 18:15:09main  {correlationId} 	4038	org.apache.coyote.http11.Http11NioProtocol	[main]	Initializing ProtocolHandler ["http-nio-8082"]
-INFO	03 Sep 2019 18:15:09main  {correlationId} 	4070	org.apache.catalina.core.StandardService	[main]	Starting service [Tomcat]
-INFO	03 Sep 2019 18:15:09main  {correlationId} 	4070	org.apache.catalina.core.StandardEngine	[main]	Starting Servlet engine: [Apache Tomcat/9.0.21]
-INFO	03 Sep 2019 18:15:09main  {correlationId} 	4392	org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]	[main]	Initializing Spring embedded WebApplicationContext
-INFO	03 Sep 2019 18:15:09main  {correlationId} 	4392	org.springframework.web.context.ContextLoader	[main]	Root WebApplicationContext: initialization completed in 3303 ms
-INFO	03 Sep 2019 18:15:11main  {correlationId} 	6422	org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor	[main]	Initializing ExecutorService 'applicationTaskExecutor'
-INFO	03 Sep 2019 18:15:12main  {correlationId} 	7460	org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver	[main]	Exposing 2 endpoint(s) beneath base path '/actuator'
-INFO	03 Sep 2019 18:15:12main  {correlationId} 	7590	org.apache.coyote.http11.Http11NioProtocol	[main]	Starting ProtocolHandler ["http-nio-8082"]
-INFO	03 Sep 2019 18:15:12main  {correlationId} 	7623	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	[main]	Tomcat started on port(s): 8082 (http) with context path ''
-INFO	03 Sep 2019 18:15:12main  {correlationId} 	7628	com.hotelbooking.customer.HotelBookingApplication	[main]	Started HotelBookingApplication in 7.045 seconds (JVM running for 9.154)
-INFO	03 Sep 2019 18:15:28http-nio-8082-exec-1  {correlationId} 	22869	org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]	[http-nio-8082-exec-1]	Initializing Spring DispatcherServlet 'dispatcherServlet'
-INFO	03 Sep 2019 18:15:28http-nio-8082-exec-1  {correlationId} 	22869	org.springframework.web.servlet.DispatcherServlet	[http-nio-8082-exec-1]	Initializing Servlet 'dispatcherServlet'
-INFO	03 Sep 2019 18:15:28http-nio-8082-exec-1  {correlationId} 	22909	org.springframework.web.servlet.DispatcherServlet	[http-nio-8082-exec-1]	Completed initialization in 40 ms
-INFO	03 Sep 2019 18:15:28http-nio-8082-exec-1 correlationId=b8b6f310-0ebe-4e5c-a3f7-120e7a74b576 {correlationId} 	23104	com.hotelbooking.customer.controller.HotelBookingController	[http-nio-8082-exec-1]	hotel room booking controller method start : userId 123
-INFO	03 Sep 2019 18:15:28http-nio-8082-exec-1 correlationId=b8b6f310-0ebe-4e5c-a3f7-120e7a74b576 {correlationId} 	23104	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	In DAO fetching bonus points info for userId : 123
-INFO	03 Sep 2019 18:15:28http-nio-8082-exec-1 correlationId=b8b6f310-0ebe-4e5c-a3f7-120e7a74b576 {correlationId} 	23105	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	In DAO fetched bonus points info of userId : 123
-INFO	03 Sep 2019 18:15:28http-nio-8082-exec-1 correlationId=b8b6f310-0ebe-4e5c-a3f7-120e7a74b576 {correlationId} 	23105	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	In DAO to debit bonus points to userId : 123
-INFO	03 Sep 2019 18:15:28http-nio-8082-exec-1 correlationId=b8b6f310-0ebe-4e5c-a3f7-120e7a74b576 {correlationId} 	23107	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	Current bonus points for the userId : 123 : 8000
-INFO	03 Sep 2019 18:15:28http-nio-8082-exec-1 correlationId=b8b6f310-0ebe-4e5c-a3f7-120e7a74b576 {correlationId} 	23107	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	Bonus points balance after debiting the points for userId : 123 : 4000
-INFO	03 Sep 2019 18:15:28http-nio-8082-exec-1 correlationId=b8b6f310-0ebe-4e5c-a3f7-120e7a74b576 {correlationId} 	23107	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	In DAO debited bonus points from userId : 123
-INFO	03 Sep 2019 18:15:28http-nio-8082-exec-1 correlationId=b8b6f310-0ebe-4e5c-a3f7-120e7a74b576 {correlationId} 	23108	com.hotelbooking.customer.serviceimpl.HotelBookingServiceImpl	[http-nio-8082-exec-1]	Room(s) booked for the request from userId : 123
+INFO	04 Sep 2019 03:22:33main  {correlationId} 	927	com.hotelbooking.customer.HotelBookingApplication	[main]	Starting HotelBookingApplication on LAPTOP-EVM83B6T with PID 10224 (C:\shamsheer\Git\hotel-booking-service\target\classes started by codemantra in C:\shamsheer\Git\hotel-booking-service)
+INFO	04 Sep 2019 03:22:33main  {correlationId} 	934	com.hotelbooking.customer.HotelBookingApplication	[main]	No active profile set, falling back to default profiles: default
+INFO	04 Sep 2019 03:22:35main  {correlationId} 	2971	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	[main]	Tomcat initialized with port(s): 8082 (http)
+INFO	04 Sep 2019 03:22:35main  {correlationId} 	2990	org.apache.coyote.http11.Http11NioProtocol	[main]	Initializing ProtocolHandler ["http-nio-8082"]
+INFO	04 Sep 2019 03:22:35main  {correlationId} 	3003	org.apache.catalina.core.StandardService	[main]	Starting service [Tomcat]
+INFO	04 Sep 2019 03:22:35main  {correlationId} 	3003	org.apache.catalina.core.StandardEngine	[main]	Starting Servlet engine: [Apache Tomcat/9.0.21]
+INFO	04 Sep 2019 03:22:35main  {correlationId} 	3136	org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]	[main]	Initializing Spring embedded WebApplicationContext
+INFO	04 Sep 2019 03:22:35main  {correlationId} 	3137	org.springframework.web.context.ContextLoader	[main]	Root WebApplicationContext: initialization completed in 2143 ms
+INFO	04 Sep 2019 03:22:36main  {correlationId} 	4030	org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor	[main]	Initializing ExecutorService 'applicationTaskExecutor'
+INFO	04 Sep 2019 03:22:37main  {correlationId} 	4515	org.apache.coyote.http11.Http11NioProtocol	[main]	Starting ProtocolHandler ["http-nio-8082"]
+INFO	04 Sep 2019 03:22:37main  {correlationId} 	4543	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	[main]	Tomcat started on port(s): 8082 (http) with context path ''
+INFO	04 Sep 2019 03:22:37main  {correlationId} 	4548	com.hotelbooking.customer.HotelBookingApplication	[main]	Started HotelBookingApplication in 4.052 seconds (JVM running for 5.464)
+INFO	04 Sep 2019 03:23:44http-nio-8082-exec-1  {correlationId} 	71490	org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]	[http-nio-8082-exec-1]	Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO	04 Sep 2019 03:23:44http-nio-8082-exec-1  {correlationId} 	71491	org.springframework.web.servlet.DispatcherServlet	[http-nio-8082-exec-1]	Initializing Servlet 'dispatcherServlet'
+INFO	04 Sep 2019 03:23:44http-nio-8082-exec-1  {correlationId} 	71542	org.springframework.web.servlet.DispatcherServlet	[http-nio-8082-exec-1]	Completed initialization in 51 ms
+INFO	04 Sep 2019 03:23:44http-nio-8082-exec-1 correlationId=617eb18c-a061-4301-b867-e95d40501901 {correlationId} 	71812	com.hotelbooking.customer.controller.HotelBookingController	[http-nio-8082-exec-1]	hotel room booking controller method start : userId 123
+INFO	04 Sep 2019 03:23:44http-nio-8082-exec-1 correlationId=617eb18c-a061-4301-b867-e95d40501901 {correlationId} 	71813	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	In DAO fetching bonus points info for userId : 123
+INFO	04 Sep 2019 03:23:44http-nio-8082-exec-1 correlationId=617eb18c-a061-4301-b867-e95d40501901 {correlationId} 	71814	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	In DAO fetched bonus points info of userId : 123
+INFO	04 Sep 2019 03:23:44http-nio-8082-exec-1 correlationId=617eb18c-a061-4301-b867-e95d40501901 {correlationId} 	71820	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	In DAO to debit bonus points to userId : 123
+INFO	04 Sep 2019 03:23:44http-nio-8082-exec-1 correlationId=617eb18c-a061-4301-b867-e95d40501901 {correlationId} 	71822	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	Current bonus points for the userId : 123 : 8000
+INFO	04 Sep 2019 03:23:44http-nio-8082-exec-1 correlationId=617eb18c-a061-4301-b867-e95d40501901 {correlationId} 	71823	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	Bonus points balance after debiting the points for userId : 123 : 4000
+INFO	04 Sep 2019 03:23:44http-nio-8082-exec-1 correlationId=617eb18c-a061-4301-b867-e95d40501901 {correlationId} 	71823	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	In DAO debited bonus points from userId : 123
+INFO	04 Sep 2019 03:23:44http-nio-8082-exec-1 correlationId=617eb18c-a061-4301-b867-e95d40501901 {correlationId} 	72012	com.hotelbooking.customer.serviceimpl.HotelBookingServiceImpl	[http-nio-8082-exec-1]	Room(s) booked for the request from userId : 123
+INFO	04 Sep 2019 03:24:13RMI TCP Connection(2)-127.0.0.1  {correlationId} 	100576	org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin	[RMI TCP Connection(2)-127.0.0.1]	Application shutdown requested.
+INFO	04 Sep 2019 03:24:13RMI TCP Connection(2)-127.0.0.1  {correlationId} 	100582	org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor	[RMI TCP Connection(2)-127.0.0.1]	Shutting down ExecutorService 'applicationTaskExecutor'
+INFO	04 Sep 2019 03:24:20main  {correlationId} 	948	com.hotelbooking.customer.HotelBookingApplication	[main]	Starting HotelBookingApplication on LAPTOP-EVM83B6T with PID 16864 (C:\shamsheer\Git\hotel-booking-service\target\classes started by codemantra in C:\shamsheer\Git\hotel-booking-service)
+INFO	04 Sep 2019 03:24:20main  {correlationId} 	952	com.hotelbooking.customer.HotelBookingApplication	[main]	No active profile set, falling back to default profiles: default
+INFO	04 Sep 2019 03:24:22main  {correlationId} 	2906	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	[main]	Tomcat initialized with port(s): 8082 (http)
+INFO	04 Sep 2019 03:24:22main  {correlationId} 	2925	org.apache.coyote.http11.Http11NioProtocol	[main]	Initializing ProtocolHandler ["http-nio-8082"]
+INFO	04 Sep 2019 03:24:22main  {correlationId} 	2939	org.apache.catalina.core.StandardService	[main]	Starting service [Tomcat]
+INFO	04 Sep 2019 03:24:22main  {correlationId} 	2939	org.apache.catalina.core.StandardEngine	[main]	Starting Servlet engine: [Apache Tomcat/9.0.21]
+INFO	04 Sep 2019 03:24:22main  {correlationId} 	3079	org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]	[main]	Initializing Spring embedded WebApplicationContext
+INFO	04 Sep 2019 03:24:22main  {correlationId} 	3079	org.springframework.web.context.ContextLoader	[main]	Root WebApplicationContext: initialization completed in 2064 ms
+INFO	04 Sep 2019 03:24:23main  {correlationId} 	4016	org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor	[main]	Initializing ExecutorService 'applicationTaskExecutor'
+INFO	04 Sep 2019 03:24:24main  {correlationId} 	4535	org.apache.coyote.http11.Http11NioProtocol	[main]	Starting ProtocolHandler ["http-nio-8082"]
+INFO	04 Sep 2019 03:24:24main  {correlationId} 	4566	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	[main]	Tomcat started on port(s): 8082 (http) with context path ''
+INFO	04 Sep 2019 03:24:24main  {correlationId} 	4571	com.hotelbooking.customer.HotelBookingApplication	[main]	Started HotelBookingApplication in 4.049 seconds (JVM running for 5.351)
+INFO	04 Sep 2019 03:24:35http-nio-8082-exec-2  {correlationId} 	15846	org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]	[http-nio-8082-exec-2]	Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO	04 Sep 2019 03:24:35http-nio-8082-exec-2  {correlationId} 	15846	org.springframework.web.servlet.DispatcherServlet	[http-nio-8082-exec-2]	Initializing Servlet 'dispatcherServlet'
+INFO	04 Sep 2019 03:24:35http-nio-8082-exec-2  {correlationId} 	15883	org.springframework.web.servlet.DispatcherServlet	[http-nio-8082-exec-2]	Completed initialization in 37 ms
+INFO	04 Sep 2019 03:24:35http-nio-8082-exec-2 correlationId=615d84a2-5884-4924-9c19-2baf8fbbd62c {correlationId} 	16000	com.hotelbooking.customer.controller.HotelBookingController	[http-nio-8082-exec-2]	hotel room booking controller method start : userId 123
+INFO	04 Sep 2019 03:24:35http-nio-8082-exec-2 correlationId=615d84a2-5884-4924-9c19-2baf8fbbd62c {correlationId} 	16001	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	In DAO fetching bonus points info for userId : 123
+INFO	04 Sep 2019 03:24:35http-nio-8082-exec-2 correlationId=615d84a2-5884-4924-9c19-2baf8fbbd62c {correlationId} 	16001	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	In DAO fetched bonus points info of userId : 123
+INFO	04 Sep 2019 03:24:35http-nio-8082-exec-2 correlationId=615d84a2-5884-4924-9c19-2baf8fbbd62c {correlationId} 	16003	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	In DAO to debit bonus points to userId : 123
+INFO	04 Sep 2019 03:24:35http-nio-8082-exec-2 correlationId=615d84a2-5884-4924-9c19-2baf8fbbd62c {correlationId} 	16004	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	Current bonus points for the userId : 123 : 8000
+INFO	04 Sep 2019 03:24:35http-nio-8082-exec-2 correlationId=615d84a2-5884-4924-9c19-2baf8fbbd62c {correlationId} 	16005	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	Bonus points balance after debiting the points for userId : 123 : 4000
+INFO	04 Sep 2019 03:24:35http-nio-8082-exec-2 correlationId=615d84a2-5884-4924-9c19-2baf8fbbd62c {correlationId} 	16005	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	In DAO debited bonus points from userId : 123
+INFO	04 Sep 2019 03:24:35http-nio-8082-exec-2 correlationId=615d84a2-5884-4924-9c19-2baf8fbbd62c {correlationId} 	16005	com.hotelbooking.customer.serviceimpl.HotelBookingServiceImpl	[http-nio-8082-exec-2]	Room(s) booked for the request from userId : 123
+INFO	04 Sep 2019 03:26:42RMI TCP Connection(2)-127.0.0.1  {correlationId} 	142527	org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin	[RMI TCP Connection(2)-127.0.0.1]	Application shutdown requested.
+INFO	04 Sep 2019 03:26:42RMI TCP Connection(2)-127.0.0.1  {correlationId} 	142531	org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor	[RMI TCP Connection(2)-127.0.0.1]	Shutting down ExecutorService 'applicationTaskExecutor'
+INFO	04 Sep 2019 03:48:14main  {correlationId} 	940	com.hotelbooking.customer.HotelBookingApplication	[main]	Starting HotelBookingApplication on LAPTOP-EVM83B6T with PID 3776 (C:\shamsheer\Git\hotel-booking-service\target\classes started by codemantra in C:\shamsheer\Git\hotel-booking-service)
+INFO	04 Sep 2019 03:48:14main  {correlationId} 	943	com.hotelbooking.customer.HotelBookingApplication	[main]	No active profile set, falling back to default profiles: default
+INFO	04 Sep 2019 03:48:16main  {correlationId} 	3210	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	[main]	Tomcat initialized with port(s): 8082 (http)
+INFO	04 Sep 2019 03:48:16main  {correlationId} 	3228	org.apache.coyote.http11.Http11NioProtocol	[main]	Initializing ProtocolHandler ["http-nio-8082"]
+INFO	04 Sep 2019 03:48:16main  {correlationId} 	3241	org.apache.catalina.core.StandardService	[main]	Starting service [Tomcat]
+INFO	04 Sep 2019 03:48:16main  {correlationId} 	3241	org.apache.catalina.core.StandardEngine	[main]	Starting Servlet engine: [Apache Tomcat/9.0.21]
+INFO	04 Sep 2019 03:48:17main  {correlationId} 	3527	org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]	[main]	Initializing Spring embedded WebApplicationContext
+INFO	04 Sep 2019 03:48:17main  {correlationId} 	3527	org.springframework.web.context.ContextLoader	[main]	Root WebApplicationContext: initialization completed in 2519 ms
+INFO	04 Sep 2019 03:48:18main  {correlationId} 	4406	org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor	[main]	Initializing ExecutorService 'applicationTaskExecutor'
+INFO	04 Sep 2019 03:48:18main  {correlationId} 	4882	org.apache.coyote.http11.Http11NioProtocol	[main]	Starting ProtocolHandler ["http-nio-8082"]
+INFO	04 Sep 2019 03:48:18main  {correlationId} 	4913	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	[main]	Tomcat started on port(s): 8082 (http) with context path ''
+INFO	04 Sep 2019 03:48:18main  {correlationId} 	4917	com.hotelbooking.customer.HotelBookingApplication	[main]	Started HotelBookingApplication in 4.388 seconds (JVM running for 6.088)
+INFO	04 Sep 2019 03:48:40http-nio-8082-exec-1  {correlationId} 	26350	org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]	[http-nio-8082-exec-1]	Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO	04 Sep 2019 03:48:40http-nio-8082-exec-1  {correlationId} 	26351	org.springframework.web.servlet.DispatcherServlet	[http-nio-8082-exec-1]	Initializing Servlet 'dispatcherServlet'
+INFO	04 Sep 2019 03:48:40http-nio-8082-exec-1  {correlationId} 	26383	org.springframework.web.servlet.DispatcherServlet	[http-nio-8082-exec-1]	Completed initialization in 32 ms
+INFO	04 Sep 2019 03:48:40http-nio-8082-exec-1 correlationId=efdbe820-23b9-439b-933a-bce7207c2950 {correlationId} 	26547	com.hotelbooking.customer.controller.HotelBookingController	[http-nio-8082-exec-1]	hotel room booking controller method start : userId 123
+INFO	04 Sep 2019 03:48:40http-nio-8082-exec-1 correlationId=efdbe820-23b9-439b-933a-bce7207c2950 {correlationId} 	26548	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	In DAO fetching bonus points info for userId : 123
+INFO	04 Sep 2019 03:48:40http-nio-8082-exec-1 correlationId=efdbe820-23b9-439b-933a-bce7207c2950 {correlationId} 	26549	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	In DAO fetched bonus points info of userId : 123
+INFO	04 Sep 2019 03:48:40http-nio-8082-exec-1 correlationId=efdbe820-23b9-439b-933a-bce7207c2950 {correlationId} 	26549	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	In DAO to debit bonus points to userId : 123
+INFO	04 Sep 2019 03:48:40http-nio-8082-exec-1 correlationId=efdbe820-23b9-439b-933a-bce7207c2950 {correlationId} 	26554	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	Current bonus points for the userId : 123 : 8000
+INFO	04 Sep 2019 03:48:40http-nio-8082-exec-1 correlationId=efdbe820-23b9-439b-933a-bce7207c2950 {correlationId} 	26555	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	Bonus points balance after debiting the points for userId : 123 : 4000
+INFO	04 Sep 2019 03:48:40http-nio-8082-exec-1 correlationId=efdbe820-23b9-439b-933a-bce7207c2950 {correlationId} 	26555	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	In DAO debited bonus points from userId : 123
+INFO	04 Sep 2019 03:48:40http-nio-8082-exec-1 correlationId=efdbe820-23b9-439b-933a-bce7207c2950 {correlationId} 	26557	com.hotelbooking.customer.serviceimpl.HotelBookingServiceImpl	[http-nio-8082-exec-1]	Room(s) booked for the request from userId : 123
+INFO	04 Sep 2019 03:48:43http-nio-8082-exec-2 correlationId=373a58a2-c65c-4639-8c73-fbf53b74c7b4 {correlationId} 	29523	com.hotelbooking.customer.controller.HotelBookingController	[http-nio-8082-exec-2]	hotel room booking controller method start : userId 123
+INFO	04 Sep 2019 03:48:43http-nio-8082-exec-2 correlationId=373a58a2-c65c-4639-8c73-fbf53b74c7b4 {correlationId} 	29524	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	In DAO fetching bonus points info for userId : 123
+INFO	04 Sep 2019 03:48:43http-nio-8082-exec-2 correlationId=373a58a2-c65c-4639-8c73-fbf53b74c7b4 {correlationId} 	29524	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	In DAO fetched bonus points info of userId : 123
+INFO	04 Sep 2019 03:48:43http-nio-8082-exec-2 correlationId=373a58a2-c65c-4639-8c73-fbf53b74c7b4 {correlationId} 	29524	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	In DAO to debit bonus points to userId : 123
+INFO	04 Sep 2019 03:48:43http-nio-8082-exec-2 correlationId=373a58a2-c65c-4639-8c73-fbf53b74c7b4 {correlationId} 	29524	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	Current bonus points for the userId : 123 : 4000
+INFO	04 Sep 2019 03:48:43http-nio-8082-exec-2 correlationId=373a58a2-c65c-4639-8c73-fbf53b74c7b4 {correlationId} 	29524	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	Bonus points balance after debiting the points for userId : 123 : 0
+INFO	04 Sep 2019 03:48:43http-nio-8082-exec-2 correlationId=373a58a2-c65c-4639-8c73-fbf53b74c7b4 {correlationId} 	29524	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	In DAO debited bonus points from userId : 123
+INFO	04 Sep 2019 03:48:43http-nio-8082-exec-2 correlationId=373a58a2-c65c-4639-8c73-fbf53b74c7b4 {correlationId} 	29524	com.hotelbooking.customer.serviceimpl.HotelBookingServiceImpl	[http-nio-8082-exec-2]	Room(s) booked for the request from userId : 123
+INFO	04 Sep 2019 03:48:44http-nio-8082-exec-3 correlationId=90eeb404-21bb-4374-b5b7-fa49a67d45f0 {correlationId} 	30977	com.hotelbooking.customer.controller.HotelBookingController	[http-nio-8082-exec-3]	hotel room booking controller method start : userId 123
+INFO	04 Sep 2019 03:48:44http-nio-8082-exec-3 correlationId=90eeb404-21bb-4374-b5b7-fa49a67d45f0 {correlationId} 	30978	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-3]	In DAO fetching bonus points info for userId : 123
+INFO	04 Sep 2019 03:48:44http-nio-8082-exec-3 correlationId=90eeb404-21bb-4374-b5b7-fa49a67d45f0 {correlationId} 	30978	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-3]	In DAO fetched bonus points info of userId : 123
+INFO	04 Sep 2019 03:48:44http-nio-8082-exec-3 correlationId=90eeb404-21bb-4374-b5b7-fa49a67d45f0 {correlationId} 	30978	com.hotelbooking.customer.serviceimpl.HotelBookingServiceImpl	[http-nio-8082-exec-3]	insufficient bonus points to book room(s) for userId : 123
+INFO	04 Sep 2019 03:53:39http-nio-8082-exec-4 correlationId=38005808-d956-4aea-a2ca-f40781639f09 {correlationId} 	325971	com.hotelbooking.customer.controller.UserController	[http-nio-8082-exec-4]	API called to add bonus points for the userId : 123
+INFO	04 Sep 2019 03:53:39http-nio-8082-exec-4 correlationId=38005808-d956-4aea-a2ca-f40781639f09 {correlationId} 	325971	com.hotelbooking.customer.serviceimpl.UserServiceImpl	[http-nio-8082-exec-4]	In service call to add bonus points to userId : 123
+INFO	04 Sep 2019 03:53:39http-nio-8082-exec-4 correlationId=38005808-d956-4aea-a2ca-f40781639f09 {correlationId} 	325971	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-4]	In DAO to add bonus points to userId : 123
+INFO	04 Sep 2019 03:53:39http-nio-8082-exec-4 correlationId=38005808-d956-4aea-a2ca-f40781639f09 {correlationId} 	325972	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-4]	Current bonus points for the userId : 123 : 0
+INFO	04 Sep 2019 03:53:39http-nio-8082-exec-4 correlationId=38005808-d956-4aea-a2ca-f40781639f09 {correlationId} 	325973	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-4]	Bonus points balance after adding the points for userId : 123 : 5000
+INFO	04 Sep 2019 03:53:39http-nio-8082-exec-4 correlationId=38005808-d956-4aea-a2ca-f40781639f09 {correlationId} 	325973	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-4]	In DAO added bonus points to userId successfully : 123
+INFO	04 Sep 2019 03:53:43http-nio-8082-exec-6 correlationId=c2c8e4b3-11a6-4e16-bbed-8c792966842c {correlationId} 	329608	com.hotelbooking.customer.controller.UserController	[http-nio-8082-exec-6]	API called to add bonus points for the userId : 123
+INFO	04 Sep 2019 03:53:43http-nio-8082-exec-6 correlationId=c2c8e4b3-11a6-4e16-bbed-8c792966842c {correlationId} 	329609	com.hotelbooking.customer.serviceimpl.UserServiceImpl	[http-nio-8082-exec-6]	In service call to add bonus points to userId : 123
+INFO	04 Sep 2019 03:53:43http-nio-8082-exec-6 correlationId=c2c8e4b3-11a6-4e16-bbed-8c792966842c {correlationId} 	329610	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-6]	In DAO to add bonus points to userId : 123
+INFO	04 Sep 2019 03:53:43http-nio-8082-exec-6 correlationId=c2c8e4b3-11a6-4e16-bbed-8c792966842c {correlationId} 	329610	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-6]	Current bonus points for the userId : 123 : 5000
+INFO	04 Sep 2019 03:53:43http-nio-8082-exec-6 correlationId=c2c8e4b3-11a6-4e16-bbed-8c792966842c {correlationId} 	329610	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-6]	Bonus points balance after adding the points for userId : 123 : 10000
+INFO	04 Sep 2019 03:53:43http-nio-8082-exec-6 correlationId=c2c8e4b3-11a6-4e16-bbed-8c792966842c {correlationId} 	329610	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-6]	In DAO added bonus points to userId successfully : 123
+INFO	04 Sep 2019 03:53:50http-nio-8082-exec-5 correlationId=ab707bb1-5b45-4e42-84f9-337186ae82e6 {correlationId} 	336855	com.hotelbooking.customer.controller.HotelBookingController	[http-nio-8082-exec-5]	hotel room booking controller method start : userId 123
+INFO	04 Sep 2019 03:53:50http-nio-8082-exec-5 correlationId=ab707bb1-5b45-4e42-84f9-337186ae82e6 {correlationId} 	336856	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-5]	In DAO fetching bonus points info for userId : 123
+INFO	04 Sep 2019 03:53:50http-nio-8082-exec-5 correlationId=ab707bb1-5b45-4e42-84f9-337186ae82e6 {correlationId} 	336856	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-5]	In DAO fetched bonus points info of userId : 123
+INFO	04 Sep 2019 03:53:50http-nio-8082-exec-5 correlationId=ab707bb1-5b45-4e42-84f9-337186ae82e6 {correlationId} 	336856	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-5]	In DAO to debit bonus points to userId : 123
+INFO	04 Sep 2019 03:53:50http-nio-8082-exec-5 correlationId=ab707bb1-5b45-4e42-84f9-337186ae82e6 {correlationId} 	336856	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-5]	Current bonus points for the userId : 123 : 10000
+INFO	04 Sep 2019 03:53:50http-nio-8082-exec-5 correlationId=ab707bb1-5b45-4e42-84f9-337186ae82e6 {correlationId} 	336856	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-5]	Bonus points balance after debiting the points for userId : 123 : 6000
+INFO	04 Sep 2019 03:53:50http-nio-8082-exec-5 correlationId=ab707bb1-5b45-4e42-84f9-337186ae82e6 {correlationId} 	336856	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-5]	In DAO debited bonus points from userId : 123
+INFO	04 Sep 2019 03:53:50http-nio-8082-exec-5 correlationId=ab707bb1-5b45-4e42-84f9-337186ae82e6 {correlationId} 	336856	com.hotelbooking.customer.serviceimpl.HotelBookingServiceImpl	[http-nio-8082-exec-5]	Room(s) booked for the request from userId : 123
+INFO	04 Sep 2019 03:53:52http-nio-8082-exec-7 correlationId=98de6df1-9a74-40dc-baf2-bbbee6ef483f {correlationId} 	338362	com.hotelbooking.customer.controller.HotelBookingController	[http-nio-8082-exec-7]	hotel room booking controller method start : userId 123
+INFO	04 Sep 2019 03:53:52http-nio-8082-exec-7 correlationId=98de6df1-9a74-40dc-baf2-bbbee6ef483f {correlationId} 	338363	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-7]	In DAO fetching bonus points info for userId : 123
+INFO	04 Sep 2019 03:53:52http-nio-8082-exec-7 correlationId=98de6df1-9a74-40dc-baf2-bbbee6ef483f {correlationId} 	338363	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-7]	In DAO fetched bonus points info of userId : 123
+INFO	04 Sep 2019 03:53:52http-nio-8082-exec-7 correlationId=98de6df1-9a74-40dc-baf2-bbbee6ef483f {correlationId} 	338363	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-7]	In DAO to debit bonus points to userId : 123
+INFO	04 Sep 2019 03:53:52http-nio-8082-exec-7 correlationId=98de6df1-9a74-40dc-baf2-bbbee6ef483f {correlationId} 	338363	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-7]	Current bonus points for the userId : 123 : 6000
+INFO	04 Sep 2019 03:53:52http-nio-8082-exec-7 correlationId=98de6df1-9a74-40dc-baf2-bbbee6ef483f {correlationId} 	338363	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-7]	Bonus points balance after debiting the points for userId : 123 : 2000
+INFO	04 Sep 2019 03:53:52http-nio-8082-exec-7 correlationId=98de6df1-9a74-40dc-baf2-bbbee6ef483f {correlationId} 	338363	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-7]	In DAO debited bonus points from userId : 123
+INFO	04 Sep 2019 03:53:52http-nio-8082-exec-7 correlationId=98de6df1-9a74-40dc-baf2-bbbee6ef483f {correlationId} 	338363	com.hotelbooking.customer.serviceimpl.HotelBookingServiceImpl	[http-nio-8082-exec-7]	Room(s) booked for the request from userId : 123
+INFO	04 Sep 2019 03:53:53http-nio-8082-exec-9 correlationId=536e26d4-f0fb-48ca-ab3e-226843703b88 {correlationId} 	339595	com.hotelbooking.customer.controller.HotelBookingController	[http-nio-8082-exec-9]	hotel room booking controller method start : userId 123
+INFO	04 Sep 2019 03:53:53http-nio-8082-exec-9 correlationId=536e26d4-f0fb-48ca-ab3e-226843703b88 {correlationId} 	339595	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-9]	In DAO fetching bonus points info for userId : 123
+INFO	04 Sep 2019 03:53:53http-nio-8082-exec-9 correlationId=536e26d4-f0fb-48ca-ab3e-226843703b88 {correlationId} 	339595	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-9]	In DAO fetched bonus points info of userId : 123
+INFO	04 Sep 2019 03:53:53http-nio-8082-exec-9 correlationId=536e26d4-f0fb-48ca-ab3e-226843703b88 {correlationId} 	339595	com.hotelbooking.customer.serviceimpl.HotelBookingServiceImpl	[http-nio-8082-exec-9]	insufficient bonus points to book room(s) for userId : 123
+INFO	04 Sep 2019 03:54:34main  {correlationId} 	869	com.hotelbooking.customer.HotelBookingApplication	[main]	Starting HotelBookingApplication on LAPTOP-EVM83B6T with PID 13548 (C:\shamsheer\Git\hotel-booking-service\target\classes started by codemantra in C:\shamsheer\Git\hotel-booking-service)
+INFO	04 Sep 2019 03:54:34main  {correlationId} 	874	com.hotelbooking.customer.HotelBookingApplication	[main]	No active profile set, falling back to default profiles: default
+INFO	04 Sep 2019 03:54:36main  {correlationId} 	2658	org.springframework.boot.web.embedded.tomcat.TomcatWebServer	[main]	Tomcat initialized with port(s): 8082 (http)
+INFO	04 Sep 2019 03:54:36main  {correlationId} 	2677	org.apache.coyote.http11.Http11NioProtocol	[main]	Initializing ProtocolHandler ["http-nio-8082"]
+INFO	04 Sep 2019 03:54:36main  {correlationId} 	2690	org.apache.catalina.core.StandardService	[main]	Starting service [Tomcat]
+INFO	04 Sep 2019 03:54:36main  {correlationId} 	2691	org.apache.catalina.core.StandardEngine	[main]	Starting Servlet engine: [Apache Tomcat/9.0.21]
+INFO	04 Sep 2019 03:54:36main  {correlationId} 	2823	org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]	[main]	Initializing Spring embedded WebApplicationContext
+INFO	04 Sep 2019 03:54:36main  {correlationId} 	2823	org.springframework.web.context.ContextLoader	[main]	Root WebApplicationContext: initialization completed in 1895 ms
+INFO	04 Sep 2019 03:54:37main  {correlationId} 	3798	org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor	[main]	Initializing ExecutorService 'applicationTaskExecutor'
+INFO	04 Sep 2019 03:54:38main  {correlationId} 	4305	org.apache.coyote.http11.Http11NioProtocol	[main]	Starting ProtocolHandler ["http-nio-8082"]
+ERROR	04 Sep 2019 03:54:38main  {correlationId} 	4322	org.apache.catalina.util.LifecycleBase	[main]	Failed to start component [Connector[HTTP/1.1-8082]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:296)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.hotelbooking.customer.HotelBookingApplication.main(HotelBookingApplication.java:19)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+INFO	04 Sep 2019 03:54:38main  {correlationId} 	4328	org.apache.coyote.http11.Http11NioProtocol	[main]	Pausing ProtocolHandler ["http-nio-8082"]
+INFO	04 Sep 2019 03:54:38main  {correlationId} 	4329	org.apache.catalina.core.StandardService	[main]	Stopping service [Tomcat]
+INFO	04 Sep 2019 03:54:38main  {correlationId} 	4337	org.apache.catalina.util.LifecycleBase	[main]	The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+INFO	04 Sep 2019 03:54:38main  {correlationId} 	4337	org.apache.coyote.http11.Http11NioProtocol	[main]	Stopping ProtocolHandler ["http-nio-8082"]
+INFO	04 Sep 2019 03:54:38main  {correlationId} 	4337	org.apache.coyote.http11.Http11NioProtocol	[main]	Destroying ProtocolHandler ["http-nio-8082"]
+INFO	04 Sep 2019 03:54:38main  {correlationId} 	4341	org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener	[main]	
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ERROR	04 Sep 2019 03:54:38main  {correlationId} 	4348	org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter	[main]	
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8082 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8082, or configure this application to listen on another port.
+
+INFO	04 Sep 2019 03:54:38main  {correlationId} 	4352	org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor	[main]	Shutting down ExecutorService 'applicationTaskExecutor'
+INFO	04 Sep 2019 03:54:43http-nio-8082-exec-8 correlationId=2c7e8868-f1bf-4ec8-b8fd-dd7ebf31c033 {correlationId} 	390151	com.hotelbooking.customer.controller.HotelBookingController	[http-nio-8082-exec-8]	hotel room booking controller method start : userId 123
+INFO	04 Sep 2019 03:54:43http-nio-8082-exec-8 correlationId=2c7e8868-f1bf-4ec8-b8fd-dd7ebf31c033 {correlationId} 	390151	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-8]	In DAO fetching bonus points info for userId : 123
+INFO	04 Sep 2019 03:54:43http-nio-8082-exec-8 correlationId=2c7e8868-f1bf-4ec8-b8fd-dd7ebf31c033 {correlationId} 	390151	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-8]	In DAO fetched bonus points info of userId : 123
+INFO	04 Sep 2019 03:54:43http-nio-8082-exec-8 correlationId=2c7e8868-f1bf-4ec8-b8fd-dd7ebf31c033 {correlationId} 	390152	com.hotelbooking.customer.serviceimpl.HotelBookingServiceImpl	[http-nio-8082-exec-8]	insufficient bonus points to book room(s) for userId : 123
+INFO	04 Sep 2019 03:54:58http-nio-8082-exec-10 correlationId=e9a7fcf1-e43d-471d-8494-27cf1635d8c7 {correlationId} 	405065	com.hotelbooking.customer.controller.HotelBookingController	[http-nio-8082-exec-10]	hotel room booking controller method start : userId 123
+INFO	04 Sep 2019 03:54:58http-nio-8082-exec-10 correlationId=e9a7fcf1-e43d-471d-8494-27cf1635d8c7 {correlationId} 	405066	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-10]	In DAO fetching bonus points info for userId : 123
+INFO	04 Sep 2019 03:54:58http-nio-8082-exec-10 correlationId=e9a7fcf1-e43d-471d-8494-27cf1635d8c7 {correlationId} 	405066	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-10]	In DAO fetched bonus points info of userId : 123
+INFO	04 Sep 2019 03:54:58http-nio-8082-exec-10 correlationId=e9a7fcf1-e43d-471d-8494-27cf1635d8c7 {correlationId} 	405066	com.hotelbooking.customer.serviceimpl.HotelBookingServiceImpl	[http-nio-8082-exec-10]	insufficient bonus points to book room(s) for userId : 123
+INFO	04 Sep 2019 03:55:02http-nio-8082-exec-1 correlationId=739867e2-39dd-4b56-8a57-93ac0de7cc59 {correlationId} 	409179	com.hotelbooking.customer.controller.UserController	[http-nio-8082-exec-1]	API called to add bonus points for the userId : 123
+INFO	04 Sep 2019 03:55:02http-nio-8082-exec-1 correlationId=739867e2-39dd-4b56-8a57-93ac0de7cc59 {correlationId} 	409179	com.hotelbooking.customer.serviceimpl.UserServiceImpl	[http-nio-8082-exec-1]	In service call to add bonus points to userId : 123
+INFO	04 Sep 2019 03:55:02http-nio-8082-exec-1 correlationId=739867e2-39dd-4b56-8a57-93ac0de7cc59 {correlationId} 	409179	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	In DAO to add bonus points to userId : 123
+INFO	04 Sep 2019 03:55:02http-nio-8082-exec-1 correlationId=739867e2-39dd-4b56-8a57-93ac0de7cc59 {correlationId} 	409179	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	Current bonus points for the userId : 123 : 2000
+INFO	04 Sep 2019 03:55:02http-nio-8082-exec-1 correlationId=739867e2-39dd-4b56-8a57-93ac0de7cc59 {correlationId} 	409179	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	Bonus points balance after adding the points for userId : 123 : 7000
+INFO	04 Sep 2019 03:55:02http-nio-8082-exec-1 correlationId=739867e2-39dd-4b56-8a57-93ac0de7cc59 {correlationId} 	409180	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-1]	In DAO added bonus points to userId successfully : 123
+INFO	04 Sep 2019 03:55:08http-nio-8082-exec-2 correlationId=e1b8f9a2-3cc9-44d3-8eb7-28a01a08f21d {correlationId} 	415102	com.hotelbooking.customer.controller.HotelBookingController	[http-nio-8082-exec-2]	hotel room booking controller method start : userId 123
+INFO	04 Sep 2019 03:55:08http-nio-8082-exec-2 correlationId=e1b8f9a2-3cc9-44d3-8eb7-28a01a08f21d {correlationId} 	415102	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	In DAO fetching bonus points info for userId : 123
+INFO	04 Sep 2019 03:55:08http-nio-8082-exec-2 correlationId=e1b8f9a2-3cc9-44d3-8eb7-28a01a08f21d {correlationId} 	415102	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	In DAO fetched bonus points info of userId : 123
+INFO	04 Sep 2019 03:55:08http-nio-8082-exec-2 correlationId=e1b8f9a2-3cc9-44d3-8eb7-28a01a08f21d {correlationId} 	415103	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	In DAO to debit bonus points to userId : 123
+INFO	04 Sep 2019 03:55:08http-nio-8082-exec-2 correlationId=e1b8f9a2-3cc9-44d3-8eb7-28a01a08f21d {correlationId} 	415103	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	Current bonus points for the userId : 123 : 7000
+INFO	04 Sep 2019 03:55:08http-nio-8082-exec-2 correlationId=e1b8f9a2-3cc9-44d3-8eb7-28a01a08f21d {correlationId} 	415103	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	Bonus points balance after debiting the points for userId : 123 : 3000
+INFO	04 Sep 2019 03:55:08http-nio-8082-exec-2 correlationId=e1b8f9a2-3cc9-44d3-8eb7-28a01a08f21d {correlationId} 	415103	com.hotelbooking.customer.daoimpl.UserDAOImpl	[http-nio-8082-exec-2]	In DAO debited bonus points from userId : 123
+INFO	04 Sep 2019 03:55:08http-nio-8082-exec-2 correlationId=e1b8f9a2-3cc9-44d3-8eb7-28a01a08f21d {correlationId} 	415104	com.hotelbooking.customer.serviceimpl.HotelBookingServiceImpl	[http-nio-8082-exec-2]	Room(s) booked for the request from userId : 123
