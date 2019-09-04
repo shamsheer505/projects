@@ -90,6 +90,7 @@ public class HotelBookingServiceImpl implements HotelBookingService {
 				Status status = new Status();
 				status.setStatus(true);
 				status.setMessage("Hotel room(s) booked successfully with Booking ID : "+booking_id);
+				//status.setMessage("Hotel room(s) booked successfully with Booking ID : ");
 				status.setCode("200");
 				resultMap.put("status", status);
 
